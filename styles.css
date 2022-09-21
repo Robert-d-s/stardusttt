@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 16px;
+    --green-background: #252C28;
+    --green-background-less-opacity: #252C28AA;
+    --white: #ffffff;
+    --black: #000000;
+    --black-less-opacity: #000000AA;
+    --dark-gray: #a9a9a9;
+    --dark-gray-less-opacity: #a9a9a9AA;
+    
+}
+
+/* CONTAINER */
+
+#container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url("img/lines-vertical.svg");
+   
+}
+
+#inner-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url("img/verti-yes.svg");
+    
+}
+
+/* HEADER */
+
+header{
+    width: 100vw;
+    height: 5rem;
+    background-color: var(--black);
+    
+    z-index: 100;
+}
+
+nav{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+}
+
+/* main */ 
+
+main{
+    font-family: anisette-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* FIRST SCREEN */
+
+#first-screen{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 80;
+    background: url("models/bikini4.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+h1{
+
+    color: white;
+    font-family: anisette-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10vw;
+    width: 80%;
+    height: auto;
+    filter: drop-shadow(1px 4px 5px black);
+    margin: 0 auto;
+}
+
+.first-screen-btn{
+    font-family: dinosaur, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 1rem 0.5rem;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+/* CATEGORIES */
+
+#categories{
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 81;
+    color: var(--white);
+    background-color: var(--green-background-less-opacity);
+    
+}
+
+/* rental */
+
+.rental{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    margin: 5rem auto 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--dark-gray-less-opacity);
+}
+
+h2{
+    margin: 0 auto 2rem auto;
+    padding-top: 1rem;
+}
+
+.rent-ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+    justify-content: space-between;
+    overflow: auto;
+    white-space: nowrap; 
+}
+
+.mani{
+    width: 10rem;
+    filter: drop-shadow(2px 4px 6px);
+}
+
+.rent-ul li{
+    list-style: none;
+    padding: 1rem;
+    
+}
+
+.rent-ul li:hover{
+    background-color: var(--black);
+    cursor: pointer;
+}
+
+/* ready */
+
+.ready{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    margin: 5rem auto 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--dark-gray-less-opacity);
+}
+
+h2{
+    margin: 0 auto 2rem auto;
+}
+
+.ready-ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.ready-ul li{
+    list-style: none;
+    padding: 1rem;
+}
+
+.ready-ul li:hover{
+    background-color: darkgray;
+}
+
+/* custom */
+
+.custom{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    margin: 5rem auto 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--dark-gray-less-opacity);
+}
+
+h2{
+    margin: 0 auto 2rem auto;
+}
+
+.custom-ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.custom-ul li{
+    list-style: none;
+    padding: 1rem;
+}
+
+.custom-ul li:hover{
+    background-color: darkgray;
+}
+
+/* first item */
+
+.first-item{
+    padding-left: 5rem; 
+}
+
+/* ABOUT */
+
+#about{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 80;
+    color: var(--white);
+    padding: 0.5rem;
+    background-color: var(--green-background-less-opacity);
+    font-family: anisette-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.norma{
+    width: 100%;
+    height: auto;
+}
+
+
+.norma-h2{
+background-color: var(--black-less-opacity);
+padding: 1rem;
+text-align: center;
+}
+
+.norma-p{
+    background-color: var(--black-less-opacity);
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 50ch;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-family: dinosaur, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* QUOTES */
+
+#quotes{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 80;
+    color: var(--white);
+    background-color: var(--green-background-less-opacity);
+    
+}
+
+.customer-quotes-h2{
+    margin: 5rem auto 2rem auto;
+    text-align: center;
+}
+
+.quote-sarah{
+    width: 100%;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    padding: 1rem
+
+}
+
+.quote-zina{
+    width: 100%;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+.customer-quotes-p{
+    padding: 1rem;
+    margin: 0 auto 0rem auto;
+    max-width: 20ch;
+    line-height: 1.5;
+    font-family: dinosaur, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* SUBSCRIPTION */
+
+#subscription{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    z-index: 80;
+    color: var(--white);
+    background-color: var(--green-background-less-opacity);
+}
+
+.inside-sub{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px dashed var(--white);
+}
+
+.subscription-h2{
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+.subscription-btn{
+    font-family: dinosaur, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 1rem 0.5rem;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--black-less-opacity);
+    color: var(--white);
+    font-family: anisette-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
