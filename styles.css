@@ -254,7 +254,7 @@ h2{
     z-index: 80;
     color: var(--white);
     padding: 0.5rem;
-    background-color: var(--green-background-less-opacity);
+    background-color: var(--green-background);
     font-family: anisette-std, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -264,6 +264,7 @@ h2{
 .norma{
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 
@@ -275,6 +276,7 @@ text-align: center;
 
 .norma-p{
     background-color: var(--black-less-opacity);
+    border-radius: 10px;
     padding: 1rem;
     margin: 0 auto;
     max-width: 50ch;
@@ -344,7 +346,7 @@ text-align: center;
     
     z-index: 80;
     color: var(--white);
-    background-color: var(--green-background-less-opacity);
+    background-color: var(--green-background);
 }
 
 .inside-sub{
@@ -355,12 +357,15 @@ text-align: center;
     justify-content: center;
     flex-direction: column;
     border: 2px dashed var(--white);
+    background-color: var(--dark-gray-less-opacity);
+    border-radius: 10px;
 }
 
 .subscription-h2{
     margin: 0 auto 2rem auto;
     text-align: center;
     padding: 1rem;
+    font-size: 1.5rem;
 }
 
 .subscription-btn{
