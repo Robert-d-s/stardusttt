@@ -5,6 +5,9 @@
     <!-- adobe fonts-->
     <link rel="stylesheet" href="https://use.typekit.net/vyr5cgx.css">
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <link rel="stylesheet" href="styles.css">
     <meta NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -22,7 +25,7 @@
         <header>
 
             <nav>
-                <p>THIS IS A NAV</p>
+                <p>STARDUST LAB</p>
             </nav>
 
         </header>
@@ -42,7 +45,7 @@
 
             <section id="categories">
                 
-                <div class="rental">
+                <div class="rental" data-aos="fade-right">
                     <h2>RENT</h2>
 
                     <ul class="rent-ul">
@@ -59,7 +62,7 @@
                     </ul>
                 </div>
 
-                <div class="ready">
+                <div class="ready" data-aos="fade-right">
                     <h2>READY TO SHIP</h2>
 
                     <ul class="ready-ul">
@@ -76,7 +79,7 @@
                     </ul>
                 </div>
 
-                <div class="custom">
+                <div class="custom" data-aos="fade-right">
                     <h2>CUSTOMIZE IT</h2>
 
                     <ul class="custom-ul">
@@ -100,11 +103,11 @@
 
             <section id="about">
 
-                <img class="norma" src="norma/norma-vertical.jpeg" alt="">
+                <img class="norma" src="norma/norma-vertical.jpeg" alt="Image of Norma" data-aos="fade-up">
 
                 
 
-            <p class="norma-p">Hi! I am Norma, a Fashion and Jewelry designer based in Copenhagen. 
+            <p class="norma-p" data-aos="fade-up">Hi! I am Norma, a Fashion and Jewelry designer based in Copenhagen. 
                 <br><br> 
                 I started sewing my bikinis back 2013 when I won my class in Bikini Fitness. 
                 Since then I became passionate about improving my physique and presentation. 
@@ -119,7 +122,7 @@
 
             </section>
 
-            <section id="quotes">
+            <section id="quotes" data-aos="fade-up">
                 <h2 class="customer-quotes-h2">OUR CUSTOMERS LOVE US!</h2>
 
                 <div class="quote-sarah">
@@ -145,7 +148,7 @@
 
             <section id="subscription">
 
-                <div class="inside-sub">
+                <div class="inside-sub" data-aos="flip-right" data-aos-duration="800">
                     <h2 class="subscription-h2">Subscribe and optimise 
                         your <strong>performance</strong> today</h2>
 
@@ -173,5 +176,10 @@
     
 
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
 </body>
 </html>

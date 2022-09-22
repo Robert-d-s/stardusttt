@@ -70,7 +70,7 @@ main{
     justify-content: flex-end;
     position: relative;
     z-index: 80;
-    background: url("models/bikini4.jpeg");
+    background: url("hero/goal_1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -265,6 +265,7 @@ h2{
     width: 100%;
     height: auto;
     border-radius: 10px;
+    margin: 0 auto 2rem auto;
 }
 
 
