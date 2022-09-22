@@ -1,3 +1,26 @@
+// fetch data
+
+const url = "https://stardustlab-da2b.restdb.io/rest/products";
+
+let key= "96dddc348b485a47ef57f27722546e63f01aa";
+
+fetch(url, options)
+.then(response => {
+if (!response.ok) {
+    throw Error(response.statusText);
+}
+return response.json();
+})
+.then(data => {
+    // we have the data 
+    // console.log(data);
+    handleData(data);
+})
+.catch (e => {
+    // something went wrong
+    console.error("An error has occured.", e.message);
+})
+
 // change img source
 
 const firstScreen = document.querySelector('#first-screen');
