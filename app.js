@@ -1,5 +1,8 @@
-// fetch data
+// fetch data related only to rental bikinis
 
+//const url = "https://stardustlab-da2b.restdb.io/rest/productsq={'Category':'Rental'}";
+
+//normal url
 const url = "https://stardustlab-da2b.restdb.io/rest/products";
 
 // api key
@@ -20,13 +23,104 @@ fetch(url, options)
 })
 .then(data => {
     // we have the data 
-     console.log(data);
-    //handleData(data);
+    console.log(data); 
+    handleData(data);
 })
 .catch (e => {
     // something went wrong
     console.error("An error has occured.", e.message);
 })
+
+
+
+// FUNCTION FOR THE RENTAL CATEGORY
+
+function handleData(stardustData){
+    
+    
+    stardustData.forEach( bikini => {
+
+        // make template
+
+        // grab it
+
+         // add data only if the type of the element's category is "Rental"
+
+
+        if (bikini.Category == "Rental"){
+
+            const rentalTemplate = document.querySelector('.rental-template').content;
+
+            // clone it
+            const clone = rentalTemplate.cloneNode(true);
+
+
+            
+            // add the name of the product
+
+            clone.querySelector('p').textContent = bikini.Name; 
+
+            // add the image of the product
+
+            clone.querySelector('img').src = bikini.img;
+
+            // append to parent
+
+            const daddy = document.querySelector(".rent-ul");
+
+            daddy.appendChild(clone); }
+
+        if (bikini.Category == "Ready") {
+
+        const readyTemplate = document.querySelector('.ready-template').content;
+
+        // clone it
+        const readyClone = readyTemplate.cloneNode(true);
+
+
+            
+            // add the name of the product
+
+            readyClone.querySelector('p').textContent = bikini.Name; 
+
+            // add the image of the product
+
+            readyClone.querySelector('img').src = bikini.img;
+
+            // append to parent
+
+            let readyDaddy = document.querySelector(".ready-ul");
+
+            readyDaddy.appendChild(readyClone);
+       } 
+       if (bikini.Type == "Shoes") {
+
+        const shoesTemplate = document.querySelector('.accessories-template').content;
+
+        // clone it
+        const shoesClone = shoesTemplate.cloneNode(true);
+
+
+            
+            // add the name of the product
+
+            shoesClone.querySelector('p').textContent = bikini.Description; 
+
+            // add the image of the product
+
+            shoesClone.querySelector('img').src = bikini.img;
+
+            // append to parent
+
+            let shoesDaddy = document.querySelector(".accessories-ul");
+
+            shoesDaddy.appendChild(shoesClone);
+       }
+
+        }) 
+    }
+
+    
 
 //
 //
