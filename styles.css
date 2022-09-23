@@ -21,7 +21,7 @@
     width: 100%;
     height: 100%;
     position: relative;
-    background: url("img/lines-vertical.svg");
+    background: url("img/lines-vertical.svg"); 
    
 }
 
@@ -29,7 +29,7 @@
     width: 100%;
     height: 100%;
     position: relative;
-    background: url("img/verti-yes.svg");
+   /* background: url("img/verti-yes.svg"); */
     
 }
 
@@ -148,8 +148,7 @@ h2{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-   
-   
+      
 }
 
 h2{
@@ -166,8 +165,10 @@ h2{
     justify-content: space-between;
     overflow: auto;
     white-space: nowrap; 
-    background-color: var(--dark-gray-less-opacity);
+  /*  background-color: var(--dark-gray-less-opacity); */
     filter: drop-shadow(2px 4px 6px black);
+    border-top: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
 }
 
 .rental-bikini{
@@ -219,8 +220,10 @@ h2{
     align-items: center;
     overflow: auto;
     white-space: nowrap;
-    background-color: var(--dark-gray-less-opacity);
-    filter: drop-shadow(2px 4px 6px black);
+  /*  background-color: var(--dark-gray-less-opacity); */
+  filter: drop-shadow(2px 4px 6px black);
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
 }
 
 .ready-ul li{
@@ -267,8 +270,10 @@ h2{
     align-items: center;
     overflow: auto;
     white-space: nowrap;
-    background-color: var(--dark-gray-less-opacity);
-    filter: drop-shadow(2px 4px 6px black);
+  /*  background-color: var(--dark-gray-less-opacity); */
+  filter: drop-shadow(2px 4px 6px black);
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
 }
 
 .accessories-img{
@@ -819,6 +824,59 @@ h2{
 
 
 @media only screen and (min-width: 1000px){
+
+
+    /* FIRST SCREEN */
+
+#first-screen{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 80;
+    background: url("quality-desktop/desktop-bikini4.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+h1{
+    color: white;
+    font-family: anisette-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5vw;
+    width: 60%;
+    height: auto;
+    filter: drop-shadow(1px 4px 5px black);
+    margin: 8rem auto 2rem auto;
+    background-color: var(--black-less-opacity);
+    padding: 1rem;
+}
+
+.first-screen-btn{
+    font-family: dinosaur, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 1rem 1rem;
+    width: 100%;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+
+.first-screen-btn:hover{
+    color: var(--black);
+    background-color: var(--white);
+    cursor: pointer;
+}
 
 
     /* CATEGORIES */
