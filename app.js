@@ -153,7 +153,7 @@ function changeScreen1 () {
     
     firstScreen.style.background = "url('quality-desktop/desktop-bikini.webp')";
     firstScreen.style.backgroundPosition = "center";
-    firstScreen.style.backgroundSize = "contain";
+    firstScreen.style.backgroundSize = "cover";
     firstScreen.style.backgroundRepeat = "no-repeat";
     textH1.textContent = "SUCCESS AS A WAY OF LIVING";
     }
@@ -173,7 +173,7 @@ function changeScreen2 () {
         
         firstScreen.style.background = "url('quality-desktop/desktop-bikini2.webp')";
         firstScreen.style.backgroundPosition = "center";
-        firstScreen.style.backgroundSize = "contain";
+        firstScreen.style.backgroundSize = "cover";
         firstScreen.style.backgroundRepeat = "no-repeat";
         textH1.textContent = "FIRST STEPS ARE THE SHINIEST";
         }
@@ -192,7 +192,7 @@ function changeScreen3 () {
         
         firstScreen.style.background = "url('quality-desktop/desktop-bikini3.webp')";
         firstScreen.style.backgroundPosition = "center";
-        firstScreen.style.backgroundSize = "contain";
+        firstScreen.style.backgroundSize = "cover";
         firstScreen.style.backgroundRepeat = "no-repeat";
         textH1.textContent = "BIG DREAMS AHEAD";
         }
@@ -210,7 +210,7 @@ function changeScreen4 () {
         
         firstScreen.style.background = "url('quality-desktop/desktop-bikini4.webp')";
         firstScreen.style.backgroundPosition = "center";
-        firstScreen.style.backgroundSize = "contain";
+        firstScreen.style.backgroundSize = "cover";
         firstScreen.style.backgroundRepeat = "no-repeat";
         textH1.textContent = "REACH YOUR MILESTONE IN STYLE";
         }
