@@ -70,27 +70,27 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     position: relative;
     z-index: 80;
     background: url("quality/milestone.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
 
 
 h1{
-
     color: white;
     font-family: anisette-std, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 9vw;
+    font-size: 8vw;
     width: 80%;
     height: auto;
     filter: drop-shadow(1px 4px 5px black);
-    margin: 0 auto;
+    margin: 8rem auto 2rem auto;
     background-color: var(--black-less-opacity);
     padding: 1rem;
 }
@@ -106,6 +106,12 @@ h1{
     width: 100%;
     margin: 2rem auto;
     border-radius: 10px;
+}
+
+.first-screen-btn:hover{
+    color: var(--black);
+    background-color: var(--white);
+    cursor: pointer;
 }
 
 /* CATEGORIES */
@@ -423,23 +429,48 @@ text-align: center;
     font-size: 1rem;
     color: var(--white);
     background-color: var(--black);
-    padding: 1rem 0.5rem;
+    padding: 1rem 1.5rem;
     width: 100%;
     margin: 2rem auto;
+    border-radius: 10px;
+}
+
+.subscription-btn:hover{
+    color: var(--black);
+    background-color: var(--white);
+    cursor: pointer;
 }
 
 /* footer */
 
 footer{
     width: 100%;
-    height: 5rem;
+    height: 25vh;
     background-color: var(--black-less-opacity);
     color: var(--white);
-    font-family: anisette-std, sans-serif;
-    font-weight: 700;
+    font-family: dinosaur, sans-serif;
+    font-weight: 400;
     font-style: normal;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    padding: 1rem;
+}
+
+.logo{
+    transform: scale(2);
+}
+
+.footer-span{
     font-size: 1rem;
 }
