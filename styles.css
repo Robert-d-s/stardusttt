@@ -1037,6 +1037,60 @@ h2{
 }
 
 
+/* QUOTES */
+
+#quotes{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 80;
+    color: var(--white);
+    background-color: var(--green-background-less-opacity);
+    
+}
+
+.customer-quotes-h2{
+    margin: 5rem auto 2rem auto;
+    text-align: center;
+    max-width: 80%;
+    font-size: 2.5rem;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.quote-sarah{
+    width: 70%;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--black-less-opacity);
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.quote-zina{
+    width: 70%;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--black-less-opacity);
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.customer-quotes-p{
+    padding: 1rem;
+    margin: 0 auto 0rem auto;
+    max-width: 20ch;
+    line-height: 1.5;
+    font-family: dinosaur, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+
 /* SUBSCRIPTION */
 
 #subscription{
