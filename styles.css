@@ -105,6 +105,7 @@ h1{
     padding: 1rem 0.5rem;
     width: 100%;
     margin: 2rem auto;
+    border-radius: 10px;
 }
 
 /* CATEGORIES */
@@ -122,6 +123,14 @@ h1{
     background-color: var(--green-background-less-opacity);
 }
 
+h2{
+    margin: 0 auto 2rem auto;
+    font-family: anisette-std, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+}
+
 /* rental */
 
 .rental{
@@ -134,7 +143,7 @@ h1{
     justify-content: center;
     flex-direction: column;
     background-color: var(--dark-gray-less-opacity);
-    
+   
 }
 
 h2{
@@ -146,7 +155,7 @@ h2{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 90%;
+    height: 60%;
     justify-content: space-between;
     overflow: auto;
     white-space: nowrap; 
@@ -164,6 +173,9 @@ h2{
 
 .rental-p{
     padding: 1rem 0;
+    font-family: dinosaur, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .rent-ul li:hover{
@@ -193,6 +205,7 @@ h2{
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 60%;
     justify-content: space-between;
     overflow: auto;
     white-space: nowrap;
@@ -210,6 +223,9 @@ h2{
 
 .ready-p{
     padding: 1rem 0;
+    font-family: dinosaur, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .ready-ul li:hover{
@@ -230,14 +246,11 @@ h2{
     background-color: var(--dark-gray-less-opacity);
 }
 
-h2{
-    margin: 0 auto 2rem auto;
-}
-
 .accessories-ul{
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 60%;
     justify-content: space-between;
     overflow: auto;
     white-space: nowrap;
@@ -250,6 +263,9 @@ h2{
 
 .accessories-p{
     padding: 1rem 0;
+    font-family: dinosaur, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .accessories-ul li{
@@ -281,9 +297,6 @@ h2{
     color: var(--white);
     padding: 0.5rem;
     background-color: var(--green-background);
-    font-family: anisette-std, sans-serif;
-    font-weight: 400;
-    font-style: normal;
     
 }
 
