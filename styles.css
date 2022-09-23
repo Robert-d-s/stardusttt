@@ -148,8 +148,23 @@ h2{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-      
 }
+
+.newBack{
+    background: url("img/lines.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: changeBackground;
+    animation-duration: 5s; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes changeBackground {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
 
 h2{
     margin: 0 auto 2rem auto;
@@ -165,10 +180,8 @@ h2{
     justify-content: space-between;
     overflow: auto;
     white-space: nowrap; 
-  /*  background-color: var(--dark-gray-less-opacity); */
     filter: drop-shadow(2px 4px 6px black);
-    border-top: 1px solid var(--white);
-    border-bottom: 1px solid var(--white);
+
 }
 
 .rental-bikini{
@@ -179,6 +192,7 @@ h2{
 .rent-ul li{
     list-style: none;
     padding: 1rem;  
+    background-color: darkgray;
 }
 
 .rental-p{
@@ -188,10 +202,10 @@ h2{
     font-style: normal;
 }
 
-.rent-ul li:hover{
-    background-color: var(--black);
-    cursor: pointer;
-}
+.rental-bikini:hover + .rental-p{
+    color: var(--black);
+ }
+
 
 /* ready */
 
@@ -204,7 +218,6 @@ h2{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
 }
 
 h2{
@@ -220,15 +233,13 @@ h2{
     align-items: center;
     overflow: auto;
     white-space: nowrap;
-  /*  background-color: var(--dark-gray-less-opacity); */
-  filter: drop-shadow(2px 4px 6px black);
-  border-top: 1px solid var(--white);
-  border-bottom: 1px solid var(--white);
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .ready-ul li{
     list-style: none;
     padding: 1rem;
+    background-color: darkgray;
 }
 
 .ready-bikini{
@@ -243,9 +254,10 @@ h2{
     font-style: normal;
 }
 
-.ready-ul li:hover{
-    background-color: darkgray;
+.ready-bikini:hover + .ready-p{
+   color: var(--black);
 }
+
 
 /* accessories */
 
@@ -258,7 +270,6 @@ h2{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
 }
 
 .accessories-ul{
@@ -270,10 +281,7 @@ h2{
     align-items: center;
     overflow: auto;
     white-space: nowrap;
-  /*  background-color: var(--dark-gray-less-opacity); */
-  filter: drop-shadow(2px 4px 6px black);
-  border-top: 1px solid var(--white);
-  border-bottom: 1px solid var(--white);
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .accessories-img{
@@ -500,7 +508,7 @@ footer{
     position: relative;
     z-index: 81;
     color: var(--white);
-    background-color: var(--green-background-less-opacity);
+
 }
 
 h2{
@@ -522,9 +530,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    
-   
+    flex-direction: column;   
 }
 
 .rent-ul{
@@ -536,7 +542,6 @@ h2{
     justify-content: space-between;
     overflow: auto;
     white-space: nowrap; 
-    background-color: var(--dark-gray-less-opacity);
     filter: drop-shadow(2px 4px 6px black);
 }
 
@@ -574,7 +579,6 @@ h2{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
 }
 
 h2{
@@ -590,7 +594,6 @@ h2{
     justify-content: space-between;
     overflow: auto;
     white-space: nowrap;
-    background-color: var(--dark-gray-less-opacity);
     filter: drop-shadow(2px 4px 6px black);
 }
 
@@ -627,7 +630,6 @@ h2{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
 }
 
 .accessories-ul{
@@ -639,7 +641,6 @@ h2{
     justify-content: space-between;
     overflow: auto;
     white-space: nowrap;
-    background-color: var(--dark-gray-less-opacity);
     filter: drop-shadow(2px 4px 6px black);
 }
 
@@ -891,7 +892,7 @@ h1{
     position: relative;
     z-index: 81;
     color: var(--white);
-    background-color: var(--green-background-less-opacity);
+
 }
 
 h2{
@@ -907,29 +908,28 @@ h2{
 /* rental */
 
 .rental{
-    width: 90%;
-    height: 30%;
+    width: 100%;
+    height: 25%;
     text-align: center;
-    margin: 5rem 0 2rem auto;
+    margin: 5rem auto 2rem auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: row;
+    flex-direction: column;
     background-color: none;
-    
 }
 
 .rent-ul{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 80%;
+    height: 90%;
     align-items: center;
     justify-content: space-between;
     overflow: auto;
     white-space: nowrap; 
-    background-color: var(--dark-gray-less-opacity);
     filter: drop-shadow(2px 4px 6px black);
+    border: none;
 }
 
 .rental-bikini{
@@ -956,13 +956,13 @@ h2{
 
 .ready{
     width: 90%;
-    height: 30%;
+    height: 25%;
     text-align: center;
     margin: 2rem 0 2rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .ready-h2{
@@ -979,7 +979,7 @@ h2{
     justify-content: space-between;
     overflow: auto;
     white-space: nowrap;
-    background-color: var(--dark-gray-less-opacity);
+    border: none;
     filter: drop-shadow(2px 4px 6px black);
 }
 
@@ -1009,13 +1009,13 @@ h2{
 
 .accessories{
     width: 90%;
-    height: 30%;
+    height: 25%;
     text-align: center;
     margin: 2rem 0 2rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
 
 }
 
@@ -1028,7 +1028,7 @@ h2{
     justify-content: space-between;
     overflow: auto;
     white-space: nowrap;
-    background-color: var(--dark-gray-less-opacity);
+    border: none;
     filter: drop-shadow(2px 4px 6px black);
 }
 
