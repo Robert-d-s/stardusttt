@@ -346,21 +346,23 @@ text-align: center;
 .customer-quotes-h2{
     margin: 5rem auto 2rem auto;
     text-align: center;
+    max-width: 80%;
 }
 
 .quote-sarah{
-    width: 100%;
-    margin: 0 auto 2rem auto;
-    text-align: center;
-    padding: 1rem
-
-}
-
-.quote-zina{
-    width: 100%;
+    width: 90%;
     margin: 0 auto 2rem auto;
     text-align: center;
     padding: 1rem;
+    background-color: var(--black-less-opacity);
+}
+
+.quote-zina{
+    width: 90%;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--black-less-opacity);
 }
 
 .customer-quotes-p{
@@ -397,7 +399,9 @@ text-align: center;
     justify-content: center;
     flex-direction: column;
     border: 2px dashed var(--white);
-    background-color: var(--dark-gray-less-opacity);
+    background: url("quality/junior.webp");
+    background-position: center;
+
     border-radius: 10px;
 }
 
@@ -406,6 +410,10 @@ text-align: center;
     text-align: center;
     padding: 1rem;
     font-size: 1.5rem;
+    background-color: var(--black-less-opacity);
+    font-family: anisette-std, sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .subscription-btn{
