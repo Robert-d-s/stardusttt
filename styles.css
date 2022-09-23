@@ -825,7 +825,7 @@ h2{
 
 #categories{
     width: 100vw;
-    height: 360vh;
+    height: 300vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -841,7 +841,7 @@ h2{
     font-family: anisette-std, sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 2rem;
     filter: drop-shadow(2px 4px 6px black);
 }
@@ -897,14 +897,18 @@ h2{
 /* ready */
 
 .ready{
-    width: 100%;
+    width: 90%;
     height: 30%;
     text-align: center;
-    margin: 5rem auto 2rem auto;
+    margin: 2rem 0 2rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+}
+
+.ready-h2{
+    padding-right: 0.5rem;
 }
 
 
@@ -946,10 +950,10 @@ h2{
 /* accessories */
 
 .accessories{
-    width: 100%;
+    width: 90%;
     height: 30%;
     text-align: center;
-    margin: 5rem auto 2rem auto;
+    margin: 2rem 0 2rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -993,6 +997,46 @@ h2{
 }
 
 
+
+ /* ABOUT */
+
+ #about{
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 80;
+    color: var(--white);
+    padding: 0.5rem;
+ 
+}
+
+.norma{
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0rem auto 2rem auto;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.norma-p{
+    background-color: var(--black-less-opacity);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0 auto 1rem auto;
+    max-width: 45ch;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-family: dinosaur, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+
 /* SUBSCRIPTION */
 
 #subscription{
@@ -1017,6 +1061,8 @@ h2{
     flex-direction: column;
     background: url("quality/junior.webp");
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 10px;
     filter: drop-shadow(2px 4px 6px black);
 }
