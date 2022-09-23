@@ -133,7 +133,7 @@ const firstScreen = document.querySelector('#first-screen');
 let textH1 = document.querySelector('h1');
 
 function changeScreen1 () {
-    firstScreen.style.background = "url('hero/pro.jpg')";
+    firstScreen.style.background = "url('quality/success.webp')";
     firstScreen.style.backgroundPosition = "center";
     firstScreen.style.backgroundSize = "cover";
     textH1.textContent = "SUCCESS AS A WAY OF LIVING";
@@ -141,21 +141,21 @@ function changeScreen1 () {
 
 
 function changeScreen2 () {
-    firstScreen.style.background = "url('hero/newbie_1.png')";
+    firstScreen.style.background = "url('quality/junior.webp')";
     firstScreen.style.backgroundPosition = "center";
     firstScreen.style.backgroundSize = "cover";
     textH1.textContent = "FIRST STEPS ARE THE SHINIEST";
 }
 
 function changeScreen3 () {
-    firstScreen.style.background = "url('hero/procard_2.jpg')";
+    firstScreen.style.background = "url('quality/card.webp')";
     firstScreen.style.backgroundPosition = "center";
     firstScreen.style.backgroundSize = "cover";
     textH1.textContent = "BIG DREAMS AHEAD";
 }
 
 function changeScreen4 () {
-    firstScreen.style.background = "url('hero/goal_1.jpg')";
+    firstScreen.style.background = "url('quality/milestone.webp')";
     firstScreen.style.backgroundPosition = "center";
     firstScreen.style.backgroundSize = "cover";
     textH1.textContent = "REACH YOUR MILESTONE IN STYLE";
@@ -175,7 +175,9 @@ function timies(){
 }
 
 
-setTimeout(timies, 100);
+   
+    setTimeout(timies, 100);
+
 
 //
 //

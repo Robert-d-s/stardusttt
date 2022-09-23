@@ -9,7 +9,7 @@
     --green-background-less-opacity: #252C28AA;
     --white: #ffffff;
     --black: #000000;
-    --black-less-opacity: #000000AA;
+    --black-less-opacity: #00000080;
     --dark-gray: #a9a9a9;
     --dark-gray-less-opacity: #a9a9a9AA;
     
@@ -37,7 +37,7 @@
 
 header{
     width: 100vw;
-    height: 5rem;
+    height: 10vh;
     background-color: var(--black);
     
     z-index: 100;
@@ -66,14 +66,14 @@ main{
 
 #first-screen{
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     position: relative;
     z-index: 80;
-    background: url("hero/goal_1.jpg");
+    background: url("quality/milestone.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -86,11 +86,13 @@ h1{
     font-family: anisette-std, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 10vw;
+    font-size: 9vw;
     width: 80%;
     height: auto;
     filter: drop-shadow(1px 4px 5px black);
     margin: 0 auto;
+    background-color: var(--black-less-opacity);
+    padding: 1rem;
 }
 
 .first-screen-btn{
@@ -289,7 +291,7 @@ h2{
     width: 100%;
     height: auto;
     border-radius: 10px;
-    margin: 0 auto 2rem auto;
+    margin: 5rem auto 2rem auto;
 }
 
 
@@ -375,7 +377,7 @@ text-align: center;
 }
 
 .inside-sub{
-    width: 70%;
+    max-width: 80%;
     height: 90%;
     display: flex;
     align-items: center;
