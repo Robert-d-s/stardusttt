@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
 :root{
     font-size: 16px;
     --green-background: #252C28;
@@ -12,7 +17,7 @@
     --black-less-opacity: #00000080;
     --dark-gray: #a9a9a9;
     --dark-gray-less-opacity: #a9a9a9AA;
-    
+    --gap: 3rem;
 }
 
 /* CONTAINER */
@@ -37,10 +42,26 @@
 
 header{
     width: 100vw;
-    height: 10vh;
-    background-color: var(--black);
     
+    position: absolute;
     z-index: 100;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+}
+
+.logo-nav{
+    display: flex;
+    width: 50%;
+    
+}
+
+.logo{
+    width: 5rem;
+    background-color: white;
+    padding: 1rem;
+    margin: 0 auto 0 5rem;
 }
 
 nav{
@@ -48,10 +69,60 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    font-family: anisette-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 50%;
+}
+
+#primary-navigation{
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     height: 5rem;
     font-family: anisette-std, sans-serif;
     font-weight: 400;
     font-style: normal;
+    gap: var(--gap);
+    background: hsl(0 0 100% / 1);
+    backdrop-filter: blur(1rem);
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 500px){
+
+    #primary-navigation{
+    position: fixed;
+    inset: 0 0 0 30%;
+    --gap: 3rem;    
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+       
+}
+
+
+}
+
+
+
+#primary-navigation > li {
+    list-style: none;
+    text-decoration: none;
+    color: var(--white);
+    padding: 1rem;
+}
+
+#primary-navigation > li:hover {
+    color: var(--black);
+    background-color: var(--white);
+    cursor: pointer;
+    border-bottom: var(--green-background-less-opacity);
 }
 
 /* main */ 
@@ -238,7 +309,7 @@ h2{
 
 .ready-ul li{
     list-style: none;
-    padding: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     background-color: darkgray;
 }
 
@@ -850,7 +921,7 @@ h2{
 header{
     width: 100vw;
     height: 15vh;
-    background-color: var(--black);
+    
     z-index: 100;
     display: flex;
     align-items: center;
@@ -926,7 +997,7 @@ h1{
 
 #categories{
     width: 100vw;
-    height: 300vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -951,7 +1022,7 @@ h2{
 
 .rental{
     width: 100%;
-    height: 30%;
+    height: auto;
     text-align: center;
     margin: 5rem auto 2rem auto;
     display: flex;
@@ -964,13 +1035,14 @@ h2{
 .rent-ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    width: 80%;
     height: 100%;
     filter: drop-shadow(2px 4px 6px black);
     border: none;
     margin: 0 auto;
-    overflow: scroll;
-    white-space:inherit; 
+    overflow: hidden;
+    white-space:none; 
     align-items: center;
     place-self: center;
     padding: 0;
@@ -1001,7 +1073,7 @@ h2{
 
 .ready{
     width: 100%;
-    height: 25%;
+    height: auto;
     text-align: center;
     margin: 2rem auto 2rem auto;
     display: flex;
@@ -1055,7 +1127,7 @@ h2{
 
 .accessories{
     width: 90%;
-    height: 25%;
+    height: auto;
     text-align: center;
     margin: 2rem auto 2rem auto;
     display: flex;
@@ -1068,20 +1140,23 @@ h2{
 .accessories-ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     width: 100%;
-    height: 100%;
+    height: 80%;
     filter: drop-shadow(2px 4px 6px black);
     border: none;
     margin: 0 auto;
     overflow: scroll;
-    white-space:inherit; 
+    white-space:none; 
     align-items: center;
     place-self: center;
     padding: 0;
+    overflow: hidden;
 }
 
 .accessories-img{
-    width: 20rem;
+    width: 10rem;
+    height: auto;
     filter: drop-shadow(2px 4px 6px);
 }
 
@@ -1095,7 +1170,7 @@ h2{
 
 .accessories-ul li{
     list-style: none;
-    padding: 1rem;
+    padding: 2rem 1rem;
 }
 
 .accessories-ul li:hover{
@@ -1108,7 +1183,7 @@ h2{
 
  #about{
     width: 100vw;
-    height: 120vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1117,15 +1192,37 @@ h2{
     z-index: 80;
     color: var(--white);
     padding: 0.5rem;
- 
+    position: relative;
+}
+
+.backtry{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: url("img/lines.svg");
+    opacity: 0;
+}
+
+.addAnimation{
+    animation-name: opacity;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opacity {
+    0% { opacity: 0;}
+    50% { opacity: 0.5;}
+    100% { opacity: 1;}
 }
 
 .norma{
-    width: 40%;
+    width: 30rem;
     height: auto;
     border-radius: 10px;
     margin: 0rem auto 2rem auto;
     filter: drop-shadow(2px 4px 6px black);
+    z-index: 100;
 }
 
 .norma-p{
@@ -1140,6 +1237,7 @@ h2{
     font-weight: 400;
     font-style: normal;
     filter: drop-shadow(2px 4px 6px black);
+    z-index: 100;
 }
 
 
@@ -1155,8 +1253,7 @@ h2{
     position: relative;
     z-index: 80;
     color: var(--white);
-    background-color: var(--green-background-less-opacity);
-    
+    position: relative; 
 }
 
 .customer-quotes-h2{
@@ -1165,6 +1262,7 @@ h2{
     max-width: 80%;
     font-size: 2.5rem;
     filter: drop-shadow(2px 4px 6px black);
+    z-index: 100;
 }
 
 .quote-sarah{
@@ -1174,6 +1272,7 @@ h2{
     padding: 1rem;
     background-color: var(--black-less-opacity);
     filter: drop-shadow(2px 4px 6px black);
+      z-index: 100;
 }
 
 .quote-zina{
@@ -1183,6 +1282,7 @@ h2{
     padding: 1rem;
     background-color: var(--black-less-opacity);
     filter: drop-shadow(2px 4px 6px black);
+      z-index: 100;
 }
 
 .customer-quotes-p{
@@ -1194,6 +1294,7 @@ h2{
     font-weight: 400;
     font-style: normal;
     font-size: 1.5rem;
+      z-index: 100;
 }
 
 
@@ -1201,20 +1302,20 @@ h2{
 
 #subscription{
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 80;
     color: var(--white);
-    background-color: var(--green-background-less-opacity);
+    
 
 }
 
 .inside-sub{
-    max-width: 80%;
-    height: 90%;
+    max-width: 40%;
+    height: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1259,3 +1360,4 @@ h2{
 }
 
 }
+

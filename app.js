@@ -1,6 +1,3 @@
-// fetch data related only to rental bikinis
-
-//const url = "https://stardustlab-da2b.restdb.io/rest/productsq={'Category':'Rental'}";
 
 //normal url
 const url = "https://stardustlab-da2b.restdb.io/rest/products";
@@ -70,7 +67,9 @@ function handleData(stardustData){
 
             daddy.appendChild(clone); }
 
-        if (bikini.Category == "Ready") {
+        // if the bikini is from the "ready to ship" category    
+
+        else if (bikini.Category == "Ready") {
 
         const readyTemplate = document.querySelector('.ready-template').content;
 
@@ -93,7 +92,11 @@ function handleData(stardustData){
 
             readyDaddy.appendChild(readyClone);
        } 
-       if (bikini.Type == "Shoes") {
+
+       // if the product is an accessory with type "Shoes", "Bracelet"
+       // "Earing" or "Cosmetic"  
+
+       else if (bikini.Type == "Shoes" || "Bracelet" || "Earing" || "Cosmetic")  {
 
         const shoesTemplate = document.querySelector('.accessories-template').content;
 
@@ -236,3 +239,14 @@ function timies(){
 
 //
 //
+
+
+const backTry = document.querySelector('.backtry');
+
+function opacity(){
+    backTry.classList.add("addAnimation");
+}
+
+backTry.addEventListener('mouseover', () => {
+    setTimeout(opacity, 100);
+})
