@@ -88,9 +88,17 @@ nav{
     font-weight: 400;
     font-style: normal;
     gap: var(--gap);
-    background: hsl(0 0 100% / 1);
-    backdrop-filter: blur(1rem);
+    background: hsl(0% 0% 0% / 0.75);
+    
     border-radius: 10px;
+}
+
+@supports (backdrop-filter: blur(1rem)){
+    #primary-navigation{
+        background: hsl(0 0 100% / 1);
+        backdrop-filter: blur(1rem);
+      
+    }
 }
 
 
